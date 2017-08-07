@@ -1,0 +1,15 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "none",
+        "tester": "bit.env/mocha/react@1"
+    },
+    "dependencies": {},
+    "structure": "components/{namespace}/{name}",
+    "dist": {
+        "target": "dist"
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "ranm8.aaa/components/user-profile@1": {
+        "files": [
+            {
+                "relativePath": "src/components/user-profile/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/user-profile/UserProfile.js",
+                "test": false,
+                "name": "UserProfile.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/user-profile/index.js"
+    },
+    "ranm8.aaa/components/hero@1": {
+        "files": [
+            {
+                "relativePath": "src/components/hero/Hero.js",
+                "test": false,
+                "name": "Hero.js"
+            },
+            {
+                "relativePath": "src/components/hero/Hero.spec.js",
+                "test": false,
+                "name": "Hero.spec.js"
+            },
+            {
+                "relativePath": "src/components/hero/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/hero/index.js"
+    },
+    "ranm8.aaa/components/list-toggle@1": {
+        "files": [
+            {
+                "relativePath": "src/components/list-toggle/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/list-toggle/ListToggle.js",
+                "test": false,
+                "name": "ListToggle.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/list-toggle/index.js"
+    },
+    "ranm8.aaa/components/hero-button@1": {
+        "files": [
+            {
+                "relativePath": "src/components/hero-button/HeroButton.js",
+                "test": false,
+                "name": "HeroButton.js"
+            },
+            {
+                "relativePath": "src/components/hero-button/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/hero-button/index.js"
+    },
+    "ranm8.aaa/components/navigation@1": {
+        "files": [
+            {
+                "relativePath": "src/components/navigation/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/navigation/Navigation.js",
+                "test": false,
+                "name": "Navigation.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/navigation/index.js"
+    },
+    "ranm8.aaa/components/item@1": {
+        "files": [
+            {
+                "relativePath": "src/components/item/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/item/Item.js",
+                "test": false,
+                "name": "Item.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/item/index.js"
+    },
+    "ranm8.aaa/components/title-list@1": {
+        "files": [
+            {
+                "relativePath": "src/components/title-list/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/title-list/TitleList.js",
+                "test": false,
+                "name": "TitleList.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/title-list/index.js"
+    }
+}
