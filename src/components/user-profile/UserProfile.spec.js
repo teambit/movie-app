@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import TestUtils from 'react-dom/test-utils';
 import jsdom from 'mocha-jsdom';
 import React from 'react';
+import UserProfile from './UserProfile';
 
-const MyComponent = require(__impl__);
 mockDom('<html><body></body></html>');
 
 describe('#MyComponent', () => {
@@ -12,7 +12,7 @@ describe('#MyComponent', () => {
 
   beforeEach(() => {
     renderedComponent = TestUtils.renderIntoDocument(
-      <MyComponent />
+      <UserProfile />
     );
   });
 

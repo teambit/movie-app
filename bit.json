@@ -4,8 +4,8 @@
         "spec": "spec.js"
     },
     "env": {
-        "compiler": "none",
-        "tester": "bit.env/mocha/react@1"
+        "compiler": "bit.env/builders/react@1",
+        "tester": "bit.env/testers/mocha-react@1"
     },
     "dependencies": {},
     "structure": "components/{namespace}/{name}",

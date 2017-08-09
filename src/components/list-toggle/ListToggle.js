@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
  
+/**
+ * Button for adding items to favorites list
+ */
 export default class ListToggle extends Component {
   constructor() {
     super();
     this.state = {
       toggled: false
     };
+  }
+
+  static propTypes = {
+    /**
+     * @property {boolean} toggled determines whether button should be toggled
+     */
+    toggled: PropTypes.bool
   }
 
   handleClick() {
