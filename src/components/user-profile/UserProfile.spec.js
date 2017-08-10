@@ -1,22 +1,23 @@
 import { expect } from 'chai';
-import TestUtils from 'react-dom/test-utils';
-import jsdom from 'mocha-jsdom';
 import React from 'react';
 import UserProfile from './UserProfile';
-
+import {mount} from 'enzyme';
 mockDom('<html><body></body></html>');
 
-describe('#MyComponent', () => {
-  jsdom({ skipWindowCheck: true });
+describe('#UserProfile', () => {
   let renderedComponent;
 
-  beforeEach(() => {
-    renderedComponent = TestUtils.renderIntoDocument(
-      <UserProfile />
-    );
-  });
+  function mountComponent(props = {}) {
+    return mount(<UserProfile />);
+  }
 
-  it('should do something cool...', () => {
-    expect(true).to.equal(true);
+  it('Should render', () => {
+    expect(UserProfile).to.be.ok;
+  });
+  it('Should contain className with default name Jack Oliver', () => {
+    const wrapper = mountComponent();
+    const name  = wrapper.find('.name').text();
+    expect(wrapper.find('.name')).to.have.length(1);
+    expect(name).to.equal(name);
   });
 });
