@@ -1,107 +1,6 @@
 {
-    "components/hero": {
-        "files": [
-            {
-                "relativePath": "src/components/hero/Hero.js",
-                "test": false,
-                "name": "Hero.js"
-            },
-            {
-                "relativePath": "src/components/hero/index.js",
-                "test": false,
-                "name": "index.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "src/components/hero/index.js"
-    },
-    "components/hero-button": {
-        "files": [
-            {
-                "relativePath": "src/components/hero-button/HeroButton.js",
-                "test": false,
-                "name": "HeroButton.js"
-            },
-            {
-                "relativePath": "src/components/hero-button/index.js",
-                "test": false,
-                "name": "index.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "src/components/hero-button/index.js"
-    },
-    "components/item": {
-        "files": [
-            {
-                "relativePath": "src/components/item/index.js",
-                "test": false,
-                "name": "index.js"
-            },
-            {
-                "relativePath": "src/components/item/Item.js",
-                "test": false,
-                "name": "Item.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "src/components/item/index.js"
-    },
-    "components/list-toggle": {
-        "files": [
-            {
-                "relativePath": "src/components/list-toggle/index.js",
-                "test": false,
-                "name": "index.js"
-            },
-            {
-                "relativePath": "src/components/list-toggle/ListToggle.js",
-                "test": false,
-                "name": "ListToggle.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "src/components/list-toggle/index.js"
-    },
-    "components/navigation": {
-        "files": [
-            {
-                "relativePath": "src/components/navigation/index.js",
-                "test": false,
-                "name": "index.js"
-            },
-            {
-                "relativePath": "src/components/navigation/Navigation.js",
-                "test": false,
-                "name": "Navigation.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "src/components/navigation/index.js"
-    },
-    "components/title-list": {
-        "files": [
-            {
-                "relativePath": "src/components/title-list/index.js",
-                "test": false,
-                "name": "index.js"
-            },
-            {
-                "relativePath": "src/components/title-list/TitleList.js",
-                "test": false,
-                "name": "TitleList.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "src/components/title-list/index.js"
-    },
     "components/user-profile": {
         "files": [
-            {
-                "relativePath": "src/components/user-profile/index.js",
-                "test": false,
-                "name": "index.js"
-            },
             {
                 "relativePath": "src/components/user-profile/UserProfile.js",
                 "test": false,
@@ -111,9 +10,54 @@
                 "relativePath": "src/components/user-profile/UserProfile.spec.js",
                 "test": true,
                 "name": "UserProfile.spec.js"
+            },
+            {
+                "relativePath": "src/components/user-profile/index.js",
+                "test": false,
+                "name": "index.js"
             }
         ],
         "origin": "AUTHORED",
-        "mainFile": "src/components/user-profile/index.js"
+        "mainFile": "src/components/user-profile/index.js",
+        "mainDistFile": "dist/src/components/user-profile/index.js"
+    },
+    "components/hero-button": {
+        "files": [
+            {
+                "relativePath": "src/components/hero-button/HeroButton.js",
+                "test": false,
+                "name": "HeroButton.js"
+            },
+            {
+                "relativePath": "src/components/hero-button/HeroButton.spec.js",
+                "test": true,
+                "name": "HeroButton.spec.js"
+            },
+            {
+                "relativePath": "src/components/hero-button/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/hero-button/index.js",
+        "mainDistFile": "dist/src/components/hero-button/index.js"
+    },
+    "navigation/navigation": {
+        "files": [
+            {
+                "relativePath": "src/components/navigation/Navigation.js",
+                "test": false,
+                "name": "Navigation.js"
+            },
+            {
+                "relativePath": "src/components/navigation/Navigation.spec.js",
+                "test": true,
+                "name": "Navigation.spec.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/navigation/Navigation.js",
+        "mainDistFile": "dist/src/components/navigation/Navigation.js"
     }
 }
