@@ -16,6 +16,7 @@ describe('#Navigation', () => {
   });
   it('Should contain list size of 4', () => {
     const wrapper = mountComponent();
-    expect(wrapper.find('li')).to.have.length(4);
+    const list = wrapper.find('li');
+    expect(list).to.have.length(4);
   });
 });
