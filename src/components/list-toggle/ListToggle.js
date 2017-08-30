@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
- 
+import style from './style.scss';
 /**
  * Button for adding items to favorites list
  */
@@ -20,17 +20,17 @@ export default class ListToggle extends Component {
   }
 
   handleClick() {
-    if(this.state.toggled === true) {
+    if (this.state.toggled === true) {
       this.setState({ toggled: false });
     } else {
-      this.setState({ toggled: true }); 
+      this.setState({ toggled: true });
     }
-    
+
   }
 
   render() {
     return (
-      <div onClick={this.handleClick} data-toggled={this.state.toggled} className="ListToggle">
+      <div onClick={this.handleClick} data-toggled={this.state.toggled} className={style.ListToggle}>
         <div>
           <i className="fa fa-fw fa-plus"></i>
           <i className="fa fa-fw fa-check"></i>

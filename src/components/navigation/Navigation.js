@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-
+import style from './style.scss';
 /**
  * Main navigation for Netflix.
  */
 export default class Navigation extends Component {
   render() {
     return (
-      <div id="navigation" className="Navigation">
+      <div id="navigation" className={style.Navigation}>
         <nav>
           <ul>
             <li>Browse</li>

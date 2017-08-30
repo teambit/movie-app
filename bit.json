@@ -1,11 +1,7 @@
 {
-    "sources": {
-        "impl": "impl.js",
-        "spec": "spec.js"
-    },
     "env": {
-        "compiler": "bit.env/builders/react@1",
-        "tester": "bit.env/testers/mocha-react@2"
+        "compiler": "none",
+        "tester": "none"
     },
     "dependencies": {},
     "structure": "components/{namespace}/{name}",

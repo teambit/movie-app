@@ -1,0 +1,48 @@
+@import '../../global.css';
+
+.UserProfile {
+  margin-left: auto;
+}
+.UserProfile .User {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.UserProfile .User .image {
+  border-radius: 44px;
+  margin-left: 10px;
+  overflow: hidden;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  -webkit-transition: border .125s ease;
+  transition: border .125s ease;
+}
+.UserProfile .User .image img {
+  width: 100%;
+  display: block;
+}
+.UserProfile .User .name {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+  height: 44px;
+}
+.UserProfile .User:hover {
+  cursor: pointer;
+}
+.UserProfile .User:hover .image {
+  border: 3px solid #e50914;
+}
+.UserProfile .UserProfile-menu {
+  display: none;
+}

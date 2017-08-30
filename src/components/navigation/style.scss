@@ -1,0 +1,26 @@
+@import '../../global.css';
+
+.Navigation ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 37px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+.Navigation ul li {
+  font-weight: 400;
+  padding: 7px 10px;
+  font-size: 14px;
+  -webkit-transition: background .125s ease;
+  transition: background .125s ease;
+  border-radius: 3px;
+}
+.Navigation ul li:hover {
+  background: #e50914;
+  cursor: pointer;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import style from './style.scss';
+
 
 /**
  * CTA button for `Hero` featured content
@@ -17,9 +19,14 @@ export default class HeroButton extends Component {
     text: PropTypes.string
   }
 
+  static defaultProps = {
+    text: 'Hero Button!',
+    primary: true,
+  }
+
   render() {
     return (
-      <a href="#" className="Button" data-primary={this.props.primary}>{this.props.text}</a>
+      <a href="#" className={style.Button} data-primary={this.props.primary}>{this.props.text}</a>
     );
   }
 }

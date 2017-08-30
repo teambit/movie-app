@@ -1,0 +1,52 @@
+@import '../../global.css';
+
+.ListToggle {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 0;
+}
+.ListToggle:hover {
+  border: 2px solid #ffffff;
+}
+.ListToggle:hover div {
+  top: -32px;
+}
+.ListToggle[data-toggled="true"] {
+  background: #e50914;
+  border: 2px solid #e50914;
+}
+.ListToggle[data-toggled="true"] div {
+  top: -32px;
+}
+.ListToggle div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 32px;
+  -webkit-transition: .125s ease;
+  transition: .125s ease;
+}
+.ListToggle div i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 32px;
+  width: 32px;
+}

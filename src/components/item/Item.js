@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ListToggle from '../list-toggle';
 import PropTypes from 'prop-types';
-
+import style from './style.scss';
 /**
  * Netflix's title items
  */
@@ -25,11 +25,11 @@ export default class Item extends Component {
 
   render() {
     return (
-      <div className="Item" style={{backgroundImage: 'url(' + this.props.backdrop + ')'}} >
-        <div className="overlay">
-          <div className="title">{this.props.title}</div>
-          <div className="rating">{this.props.score} / 10</div>
-          <div className="plot">{this.props.overview}</div>
+      <div className={style.Item} style={{ backgroundImage: 'url(' + this.props.backdrop + ')' }} >
+        <div className={style.overlay}>
+          <div className={style.title}>{this.props.title}</div>
+          <div className={style.rating}>{this.props.score} / 10</div>
+          <div className={style.plot}>{this.props.overview}</div>
           <ListToggle />
         </div>
       </div>

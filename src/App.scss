@@ -1,0 +1,68 @@
+@import './global.css';
+.Header {
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, black 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, black 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.Search {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  left:0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer-events: none;
+}
+.Search input {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  height: 37px;
+  width: 20%;
+  background: transparent;
+  color: #ffffff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border: 2px solid rgba(245, 245, 241, 0.1);
+  outline: none;
+  border-radius: 37px;
+  padding: 0 10px;
+  pointer-events: all;
+  -webkit-transition: border .25s ease, width .125s ease .125s;
+  transition: border .25s ease, width .125s ease .125s;
+}
+.Search input:focus {
+  border: 2px solid #e50914;
+  width: 30%;
+}

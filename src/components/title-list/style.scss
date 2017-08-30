@@ -1,0 +1,37 @@
+@import '../../global.css';
+
+h2, .TitleList .Title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+.TitleList {
+  padding: 20px 40px;
+  box-sizing: border-box;
+  -webkit-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  opacity: 0;
+  position: relative;
+  z-index: 4;
+}
+.TitleList .titles-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 20px 0;
+  width: calc(100vw - 80px);
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.TitleList[data-loaded='true'] {
+  opacity: 1;
+}

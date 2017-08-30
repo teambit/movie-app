@@ -1,0 +1,88 @@
+@import '../../global.css';
+
+.Item {
+  width: calc(20% - 10px);
+  min-width: calc(20% - 10px);
+  background-color: #000000;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  background-position: center;
+  background-size: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-right: 10px;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+.Item:nth-child(n+6) {
+  margin-top: 20px;
+}
+.Item:last-child {
+  margin-right: 0;
+}
+.Item .overlay {
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  padding: 20px;
+  position: relative;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity .125s ease;
+  transition: opacity .125s ease;
+}
+.Item .overlay .title {
+  font-size: 22px;
+  font-weight: 200;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+.Item .overlay .rating {
+  font-size: 14px;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease .125s;
+  transition: opacity .25s ease .125s;
+}
+.Item .overlay .plot {
+  font-size: 14px;
+  display: -webkit-box;
+  margin-top: 100px;
+  font-weight: 300;
+  line-height: 1.6;
+  opacity: 0;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: margin .25s ease .125s, opacity .25s ease .25s;
+  transition: margin .25s ease .125s, opacity .25s ease .25s;
+}
+.Item:hover {
+  background-size: 150%;
+}
+.Item:hover .overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+.Item:hover .overlay .plot {
+  margin-top: 10px;
+  opacity: 1;
+}
+.Item:hover .overlay .title {
+  opacity: 1;
+}
+.Item:hover .overlay .rating {
+  opacity: 1;
+}
+.Item:hover .overlay .ListToggle {
+  opacity: 1;
+}

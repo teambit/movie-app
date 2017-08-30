@@ -1,6 +1,116 @@
 {
-    "components/user-profile": {
+    "schneider.ss/netflix/item@1": {
         "files": [
+            {
+                "relativePath": "src/components/item/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/item/Item.js",
+                "test": false,
+                "name": "Item.js"
+            },
+            {
+                "relativePath": "src/components/item/style.scss",
+                "test": false,
+                "name": "style.scss"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/item/index.js"
+    },
+    "schneider.ss/netflix/title-list@1": {
+        "files": [
+            {
+                "relativePath": "src/components/title-list/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/title-list/style.scss",
+                "test": false,
+                "name": "style.scss"
+            },
+            {
+                "relativePath": "src/components/title-list/TitleList.js",
+                "test": false,
+                "name": "TitleList.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/title-list/index.js"
+    },
+    "schneider.ss/styles/global@1": {
+        "files": [
+            {
+                "relativePath": "src/global.css",
+                "test": false,
+                "name": "global.css"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/global.css"
+    },
+    "schneider.ss/netflix/hero@1": {
+        "files": [
+            {
+                "relativePath": "src/components/hero/Hero.js",
+                "test": false,
+                "name": "Hero.js"
+            },
+            {
+                "relativePath": "src/components/hero/Hero.spec.js",
+                "test": false,
+                "name": "Hero.spec.js"
+            },
+            {
+                "relativePath": "src/components/hero/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/hero/style.scss",
+                "test": false,
+                "name": "style.scss"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/hero/index.js"
+    },
+    "schneider.ss/netflix/list-toggle@1": {
+        "files": [
+            {
+                "relativePath": "src/components/list-toggle/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/list-toggle/ListToggle.js",
+                "test": false,
+                "name": "ListToggle.js"
+            },
+            {
+                "relativePath": "src/components/list-toggle/style.scss",
+                "test": false,
+                "name": "style.scss"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/list-toggle/index.js"
+    },
+    "schneider.ss/netflix/user-profile@1": {
+        "files": [
+            {
+                "relativePath": "src/components/user-profile/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/user-profile/style.scss",
+                "test": false,
+                "name": "style.scss"
+            },
             {
                 "relativePath": "src/components/user-profile/UserProfile.js",
                 "test": false,
@@ -8,20 +118,56 @@
             },
             {
                 "relativePath": "src/components/user-profile/UserProfile.spec.js",
-                "test": true,
-                "name": "UserProfile.spec.js"
-            },
-            {
-                "relativePath": "src/components/user-profile/index.js",
                 "test": false,
-                "name": "index.js"
+                "name": "UserProfile.spec.js"
             }
         ],
         "origin": "AUTHORED",
-        "mainFile": "src/components/user-profile/index.js",
-        "mainDistFile": "dist/src/components/user-profile/index.js"
+        "mainFile": "src/components/user-profile/index.js"
     },
-    "components/hero-button": {
+    "schneider.ss/netflix/navigation@1": {
+        "files": [
+            {
+                "relativePath": "src/components/navigation/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/navigation/Navigation.js",
+                "test": false,
+                "name": "Navigation.js"
+            },
+            {
+                "relativePath": "src/components/navigation/Navigation.spec.js",
+                "test": false,
+                "name": "Navigation.spec.js"
+            },
+            {
+                "relativePath": "src/components/navigation/style.scss",
+                "test": false,
+                "name": "style.scss"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/navigation/index.js"
+    },
+    "schneider.ss/netflix/logo@1": {
+        "files": [
+            {
+                "relativePath": "src/components/logo/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/logo/style.scss",
+                "test": false,
+                "name": "style.scss"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/components/logo/index.js"
+    },
+    "schneider.ss/netflix/hero-button@1": {
         "files": [
             {
                 "relativePath": "src/components/hero-button/HeroButton.js",
@@ -30,34 +176,21 @@
             },
             {
                 "relativePath": "src/components/hero-button/HeroButton.spec.js",
-                "test": true,
+                "test": false,
                 "name": "HeroButton.spec.js"
             },
             {
                 "relativePath": "src/components/hero-button/index.js",
                 "test": false,
                 "name": "index.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "src/components/hero-button/index.js",
-        "mainDistFile": "dist/src/components/hero-button/index.js"
-    },
-    "navigation/navigation": {
-        "files": [
-            {
-                "relativePath": "src/components/navigation/Navigation.js",
-                "test": false,
-                "name": "Navigation.js"
             },
             {
-                "relativePath": "src/components/navigation/Navigation.spec.js",
-                "test": true,
-                "name": "Navigation.spec.js"
+                "relativePath": "src/components/hero-button/style.scss",
+                "test": false,
+                "name": "style.scss"
             }
         ],
         "origin": "AUTHORED",
-        "mainFile": "src/components/navigation/Navigation.js",
-        "mainDistFile": "dist/src/components/navigation/Navigation.js"
+        "mainFile": "src/components/hero-button/index.js"
     }
 }
