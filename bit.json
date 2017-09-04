@@ -1,6 +1,6 @@
 {
     "env": {
-        "compiler": "none",
+        "compiler": "amit.windows/compilers/react@1",
         "tester": "none"
     },
     "dependencies": {},
