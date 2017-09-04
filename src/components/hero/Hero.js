@@ -1,53 +1,8 @@
 import React, { Component } from 'react';
 import HeroButton from '../hero-button';
-import styled from 'styled-components';
+import style from './style.scss';
+import '../../global.css';
 
-const Wrapper = styled.div`
-  width: 100%;
-  position: relative;
-  background-size: cover;
-  min-height: 800px;
-  background: url(https://images.alphacoders.com/633/633643.jpg);
-  color: #FFF;
-`;
-
-const Content = styled.div`
-  position: relative;
-  z-index: 4;
-  width: 500px;
-  left: 10vw;
-  top: 10vw;
-  > p {
-    width: 100%;
-  }
-`;
-
-const Logo = styled.img`
-  max-width: 400px;
-  display: block;
-  position: relative;
-  left: -5px;
-`;
-
-const ButtonsWrapper = styled.div`
-  display: flex;
-  width: 400px;
-  margin-top: 30px;
-  > button:first-child {
-    margin-right: 10px;
-  }
-`;
-
-const Overlay = styled.div`
-  background: linear-gradient(to bottom, #221f1f 0%, rgba(34, 31, 31, 0) 100%);
-  height: 100%;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transform: rotate(180deg);
-`;
 /**
  * Netflix's Hero banner, shows our featured content.
  */
@@ -58,23 +13,23 @@ export default class Hero extends Component {
   }
 
   render() {
-    const { title, description, ...rest } = this.props;
     return (
-      <Wrapper {...rest}>
-        <Content>
-          <Logo
+      <div id="hero" className={style.Hero} style={{ backgroundImage: 'url(https://images.alphacoders.com/633/633643.jpg)' }}>
+        <div className={style.content}>
+          <img
+            className={style.logo}
             src="http://www.returndates.com/backgrounds/narcos.logo.png"
             alt="narcos background"
           />
-          <h2>{title}</h2>
-          <p>{description}</p>
-          <ButtonsWrapper>
+          <h2>{this.props.title}</h2>
+          <p>{this.props.description}</p>
+          <div className={style['button-wrapper']}>
             <HeroButton primary text="Watch now" />
             <HeroButton primary={false} text="+ My list" />
-          </ButtonsWrapper>
-        </Content>
-        <Overlay />
-      </Wrapper>
+          </div>
+        </div>
+        <div className={style.overlay}></div>
+      </div>
     );
   }
 }
