@@ -1,21 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import style from './style.scss';
+import '../../global.css';
+
 /**
- * Main navigation for Netflix.
+ * @render react
+ * @name Navigation component
+ * @description Main navigation for an app.
+ * @example
+ * <Navigation
+ *    links={[
+ *      { label: 'Browse', href: 'http://browse.to.somewhere' },
+ *      { label: 'My List', href: '/my-list' },
+ *      { label: 'Top Picks', href: '/top' },
+ *      { label: 'Recent', href: '/recent' }
+ *    ]}
+ * />
  */
-export default class Navigation extends Component {
-  render() {
-    return (
-      <div id="navigation" className={style.Navigation}>
-        <nav>
-          <ul>
-            <li>Browse</li>
-            <li>My list</li>
-            <li>Top picks</li>
-            <li>Recent</li>
-          </ul>
-        </nav>
-      </div>
-    );
-  }
-}
+const Navigation = ({ links = [] }) => (
+  <div id="navigation" className={style.Navigation}>
+    <nav>
+      <ul>
+        {links.map((link, index) =>
+          <li key={index}>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        )}
+      </ul>
+    </nav>
+  </div>
+);
+
+
+export default Navigation;

@@ -2,11 +2,24 @@ import React, { Component } from 'react';
 import Item from '../item';
 import PropTypes from 'prop-types';
 import style from './style.scss';
+import '../../global.css';
 /**
- * List titles by different categories and filters
+ * @render react
+ * @name TitleList
+ * @description List titles by different categories and filters
+ * @example
+ * <TitleList
+ *    title: "Trending now"
+ *    url: 'discover/movie?sort_by=popularity.desc&page=1'
+ * />
  */
 export default class TitleList extends Component {
   apiKey = '87dfa1c669eea853da609d4968d294be';
+
+  static defaultProps = {
+    title: "Trending now",
+    url: 'discover/movie?sort_by=popularity.desc&page=1'
+  }
 
   static PropTypes = {
     /**
@@ -20,13 +33,10 @@ export default class TitleList extends Component {
     title: PropTypes.string
   }
 
-  constructor() {
-    super();
-    this.state = {
-      data: [],
-      mounted: false
-    };
-  }
+  state = {
+    data: [],
+    mounted: false
+  };
 
   loadContent() {
     var requestUrl = 'https://api.themoviedb.org/3/' + this.props.url + '&api_key=' + this.apiKey;
@@ -92,3 +102,4 @@ export default class TitleList extends Component {
     );
   }
 }
+

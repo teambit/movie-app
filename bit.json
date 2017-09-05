@@ -1,0 +1,11 @@
+{
+    "env": {
+        "compiler": "amit.windows2/compilers/react-css@2",
+        "tester": "none"
+    },
+    "dependencies": {},
+    "structure": "components/{namespace}/{name}",
+    "dist": {
+        "target": "dist"
+    }
+}

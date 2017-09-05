@@ -1,32 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import style from './style.scss';
 import '../../global.css';
 
+
 /**
- * CTA button for `Hero` featured content
+ * @name HeroButton
+ * @description CTA button for `Hero` featured content
+ * @example
+ * <HeroButton text="Im a Hero!" primary />
  */
-export default class HeroButton extends Component {
-  static propTypes = {
-    /**
-     * @property {boolean} primary determines is a primary button (emphasized)
-     */
-    primary: PropTypes.bool,
+const HeroButton = ({ text, primary }) => (
+  <a href="#" className={style.Button} data-primary={primary}>
+    {text}
+  </a>
+);
 
-    /**
-     * @property {string} text label to be displayed within the button
-     */
-    text: PropTypes.string
-  }
+HeroButton.propTypes = {
+  /**
+   * @property {boolean} primary determines is a primary button (emphasized)
+   */
+  primary: PropTypes.bool,
 
-  static defaultProps = {
-    text: 'Hero Button!',
-    primary: true,
-  }
-
-  render() {
-    return (
-      <a href="#" className={style.Button} data-primary={this.props.primary}>{this.props.text}</a>
-    );
-  }
+  /**
+   * @property {string} text label to be displayed within the button
+   */
+  text: PropTypes.string
 }
+
+HeroButton.defaultProps = {
+  text: 'Hero Button!',
+  primary: true,
+}
+
+export default HeroButton;
+

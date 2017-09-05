@@ -6,17 +6,22 @@ import Logo from './components/logo';
 import UserProfile from './components/user-profile';
 import Navigation from './components/navigation';
 import style from './App.scss';
+import './global.css';
 
+/**
+ * @render react
+ * @name App
+ * @description Displays the whole app as a composition of bit components
+ * @example
+ * <App />
+ */
 class App extends Component {
   apiKey = '87dfa1c669eea853da609d4968d294be';
 
-  constructor() {
-    super();
-    this.state = {
-      searchTerm: '',
-      searchUrl: ''
-    };
-  }
+  state = {
+    searchTerm: '',
+    searchUrl: ''
+  };
 
   handleKeyUp(e) {
     if (e.key === 'Enter' && this.state.searchTerm !== '') {
@@ -53,3 +58,4 @@ class App extends Component {
 }
 
 export default App;
+
