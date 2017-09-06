@@ -1,7 +1,7 @@
 {
     "env": {
-        "compiler": "amit.windows2/compilers/react-css@2",
-        "tester": "none"
+        "compiler": "bit.envs/compilers/react-css@1",
+        "tester": "bit.envs/testers/mocha-react-css-modules@1"
     },
     "dependencies": {},
     "structure": "components/{namespace}/{name}",
