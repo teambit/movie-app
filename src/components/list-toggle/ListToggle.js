@@ -20,25 +20,22 @@ export default class ListToggle extends Component {
     toggled: PropTypes.bool
   }
 
-  handleClick() {
+  handleClick = () => {
+    console.log(this.state);
     if (this.state.toggled === true) {
       this.setState({ toggled: false });
     } else {
       this.setState({ toggled: true });
     }
-
   }
 
   render() {
     return (
       <div onClick={this.handleClick} data-toggled={this.state.toggled} className={style.ListToggle}>
         <div>
-          <i className="fa fa-fw fa-plus"></i>
-          <i className="fa fa-fw fa-check"></i>
+          <i className={`fa fa-fw fa-${this.state.toggled ? 'check': 'plus'}`}></i>
         </div>
       </div>
     );
   }
 }
-
-

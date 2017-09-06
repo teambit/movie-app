@@ -9,8 +9,8 @@ import '../../global.css';
  * @description List titles by different categories and filters
  * @example
  * <TitleList
- *    title: "Trending now"
- *    url: 'discover/movie?sort_by=popularity.desc&page=1'
+ *    title="Trending now"
+ *    url="discover/movie?sort_by=popularity.desc&page=1"
  * />
  */
 export default class TitleList extends Component {
@@ -102,4 +102,3 @@ export default class TitleList extends Component {
     );
   }
 }
-

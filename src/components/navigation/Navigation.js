@@ -22,13 +22,12 @@ const Navigation = ({ links = [] }) => (
       <ul>
         {links.map((link, index) =>
           <li key={index}>
-            <a href={link.href}>{link.label}</a>
+            {link.label}
           </li>
         )}
       </ul>
     </nav>
   </div>
 );
-
 
 export default Navigation;

@@ -11,7 +11,7 @@ import './global.css';
 /**
  * @render react
  * @name App
- * @description Displays the whole app as a composition of bit components
+ * @description Whole app composed to tiny bit components.
  * @example
  * <App />
  */
@@ -58,4 +58,3 @@ class App extends Component {
 }
 
 export default App;
-

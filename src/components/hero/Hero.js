@@ -41,4 +41,3 @@ Hero.defaultProps = {
 }
 
 export default Hero;
-

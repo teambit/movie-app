@@ -1,4 +1,4 @@
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
 import ListToggle from '../list-toggle';
 import PropTypes from 'prop-types';
 import style from './style.scss';
@@ -59,4 +59,3 @@ export default class Item extends Component {
     );
   }
 }
-

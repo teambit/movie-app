@@ -21,5 +21,4 @@ const UserProfile = ({ username = 'Jack Oliver' }) => (
   </div>
 );
 
-
 export default UserProfile;

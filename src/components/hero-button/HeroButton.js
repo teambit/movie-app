@@ -34,4 +34,3 @@ HeroButton.defaultProps = {
 }
 
 export default HeroButton;
-
