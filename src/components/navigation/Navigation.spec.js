@@ -13,10 +13,12 @@ describe('#Navigation', () => {
   it('Should render', () => {
     const wrapper = mountComponent();
     expect(wrapper).to.be.ok;
+
   });
+
   it('Should contain list size of 4', () => {
     const wrapper = mountComponent();
     const list = wrapper.find('li');
-    expect(list).to.have.length(4);
+    expect(list).to.have.length(3);
   });
 });

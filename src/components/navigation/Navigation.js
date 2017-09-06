@@ -16,7 +16,7 @@ import '../../global.css';
  *    ]}
  * />
  */
-const Navigation = ({ links = [] }) => (
+const Navigation = ({ links }) => (
   <div id="navigation" className={style.Navigation}>
     <nav>
       <ul>
@@ -29,5 +29,13 @@ const Navigation = ({ links = [] }) => (
     </nav>
   </div>
 );
+
+Navigation.defaultProps = {
+  links: [
+    { label: 'Browse', href: 'http://browse.to.somewhere' },
+    { label: 'My List', href: '/my-list' },
+    { label: 'Top Picks', href: '/top' },
+  ]
+}
 
 export default Navigation;
