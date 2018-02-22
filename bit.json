@@ -1,6 +1,6 @@
 {
     "env": {
-        "compiler": "bit.envs/compilers/react@0.0.8",
+        "compiler": "bit.envs/compilers/react@0.0.12",
         "tester": "bit.envs/testers/mocha-react-css-modules@0.0.1"
     },
     "dependencies": {},
