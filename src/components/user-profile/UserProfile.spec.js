@@ -1,10 +1,12 @@
 import { expect } from 'chai';
 import React from 'react';
 import UserProfile from './UserProfile';
-import {mount} from 'enzyme';
+import {mount,configure} from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import style from './style.scss';
+configure({ adapter: new Adapter() });
 
-mockDom('<html><body></body></html>');
+
 describe('#UserProfile', () => {
   let renderedComponent;
 

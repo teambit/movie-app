@@ -52,9 +52,10 @@
   "dependencies": {
     "babel-runtime": "^6.25.0",
     "chai": "^4.1.2",
-    "enzyme": "^2.9.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.3.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "styled-components": "^2.1.2"
   },
   "scripts": {

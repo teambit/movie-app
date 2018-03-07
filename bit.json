@@ -1,7 +1,7 @@
 {
     "env": {
-        "compiler": "bit.envs/compilers/react@0.0.12",
-        "tester": "bit.envs/testers/mocha-react-css-modules@0.0.1"
+        "compiler": "amit.movie-app-render/compiler/react-webpack@0.0.3",
+        "tester": "giladshoham.wallmart-envs/testers/karma@0.0.10"
     },
     "dependencies": {},
     "componentsDefaultDirectory": "components/{namespace}/{name}",

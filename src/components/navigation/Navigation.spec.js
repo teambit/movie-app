@@ -1,8 +1,9 @@
 import { expect } from 'chai';
 import React from 'react';
 import Navigation from './Navigation';
-import {mount} from 'enzyme';
-mockDom('<html><body></body></html>');
+import {mount,configure} from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
 
 describe('#Navigation', () => {
 
