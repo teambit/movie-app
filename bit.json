@@ -1,6 +1,6 @@
 {
     "env": {
-        "compiler": "amit.movie-app-render/compiler/react-webpack@0.0.3",
+        "compiler": "amit.movie-app-render/compiler/react-webpack@0.0.4",
         "tester": "giladshoham.wallmart-envs/testers/karma@0.0.11"
     },
     "dependencies": {},
