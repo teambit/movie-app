@@ -1,7 +1,7 @@
 {
     "env": {
-        "compiler": "amit.movie-app-render/compiler/react-webpack@0.0.4",
-        "tester": "giladshoham.wallmart-envs/testers/karma@0.0.11"
+        "compiler": "giladshoham.envs/compiler/react-webpack@0.0.4",
+        "tester": "giladshoham.envs/testers/karma@0.0.11"
     },
     "dependencies": {},
     "componentsDefaultDirectory": "components/{namespace}/{name}",
