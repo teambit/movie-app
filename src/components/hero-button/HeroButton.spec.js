@@ -4,6 +4,7 @@ import HeroButton from './HeroButton';
 import {mount,configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
+
 describe('#HeroButton', () => {
   function mountComponent(props = {}) {
     return mount(<HeroButton text='REACT SF' />);
