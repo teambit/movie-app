@@ -1,6 +1,6 @@
 {
     "env": {
-        "compiler": "bit.envs/bundlers/webpack-css-modules@0.0.4",
+        "compiler": "bit.envs/bundlers/webpack-css-modules@0.0.5",
         "tester": "bit.envs/testers/karma-mocha@0.0.8"
     },
     "dependencies": {},
