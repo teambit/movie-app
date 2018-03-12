@@ -1,7 +1,7 @@
 {
     "env": {
-        "compiler": "giladshoham.envs/compiler/react-webpack@0.0.5",
-        "tester": "giladshoham.envs/testers/karma@0.0.11"
+        "compiler": "bit.envs/bundlers/webpack-css-modules@0.0.4",
+        "tester": "bit.envs/testers/karma-mocha@0.0.8"
     },
     "dependencies": {},
     "componentsDefaultDirectory": "components/{namespace}/{name}",

@@ -102,13 +102,13 @@ no deleted components
 Next, we'll import a [build environment](https://docs.bitsrc.io/docs/building-components.html#defining-a-default-compiler-for-your-project) and a [test environment](https://docs.bitsrc.io/docs/testing-components.html#defining-a-tester-for-your-project), so the components will be built and tested properly:
 
 ```bash
-$ bit import bit.envs/compilers/react --compiler
+$ bit import bit.envs/bundlers/webpack-css-modules --compiler
 the following component environments were installed
-- bit.envs/compilers/react@0.0.8
+- bit.envs/bundlers/webpack-css-modules@0.0.4
 
-$ bit import bit.envs/testers/mocha-react-css-modules --tester
+$ bit import bit.envs/testers/karma-mocha --tester
 the following component environments were installed
-- bit.envs/testers/mocha-react-css-modules@0.0.1
+- bit.envs/testers/testers/karma-mocha@0.0.8
 ```
 
 Now let's test the components!
