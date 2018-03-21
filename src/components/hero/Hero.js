@@ -5,6 +5,7 @@ import style from './style.scss';
 import '../../global.css';
 
 /**
+ * @render react
  * @name Hero
  * @description Netflix's Hero banner, shows our featured content.
  * @example

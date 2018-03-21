@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 import style from './style.scss';
 import '../../global.css';
 /**
+ * @render react
  * @name UserProfile
  * @description Displays the user profile
  * @example

@@ -4,6 +4,7 @@ import style from './style.scss';
 import '../../global.css';
 
 /**
+ * @render react
  * @name Logo component
  * @description It's a simple svg logo.
  * @example

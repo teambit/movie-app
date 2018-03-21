@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import style from './style.scss';
 import '../../global.css';
 /**
+ * @render react
  * @name Item
  * @description Netflix's title items
  * @example

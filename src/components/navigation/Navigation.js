@@ -4,6 +4,7 @@ import style from './style.scss';
 import '../../global.css';
 
 /**
+ * @render react
  * @name Navigation component
  * @description Main navigation for an app.
  * @example
