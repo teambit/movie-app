@@ -10,7 +10,6 @@ import style from './App.scss';
 import './global.css';
 
 /**
- * @render react
  * @name App
  * @description Whole app composed to tiny bit components.
  * @example

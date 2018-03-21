@@ -6,7 +6,6 @@ import '../../global.css';
 
 
 /** 
- * @render react
  * @name HeroButton
  * @description CTA button for `Hero` featured content
  * @example

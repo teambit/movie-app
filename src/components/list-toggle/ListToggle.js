@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import style from './style.scss';
 import '../../global.css';
 /**
- * @render react
  * @name ListToggle
  * @description Button for adding items to favorites list
  * @example

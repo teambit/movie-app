@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import style from './style.scss';
 import '../../global.css';
 /**
- * @render react
  * @name TitleList
  * @description List titles by different categories and filters
  * @example
