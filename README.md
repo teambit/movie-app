@@ -2,8 +2,6 @@
 
 This repository was exported as [Bit](https://docs.bitsrc.io/docs/what-is-bit.html) components.
 
-If you wish to follow the instructions, please delete the `bit.json` and `.bitmap` files after cloning the repository.
-
 This is how we did it:
 
 ```bash
