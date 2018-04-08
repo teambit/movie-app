@@ -12,7 +12,7 @@ successfully initialized a bit workspace.
 $ npm install
 ```
 
-The [bit init](https://docs.bitsrc.io/docs/cli-init.html) command has initialized a [local Bit scope](https://docs.bitsrc.io/docs/what-is-bit.html#what-is-a-scope-collection) and created a [bit.json](https://docs.bitsrc.io/docs/conf-bit-json.html) file. `npm install` verifies that your package dependencies are up to date.
+The [bit init](https://docs.bitsrc.io/docs/cli-init.html) command has initialized a [local Bit scope](https://docs.bitsrc.io/docs/what-is-bit.html#what-is-a-scope-collection) and created a [bit.json](https://docs.bitsrc.io/docs/conf-bit-json.html) file.
 
 Next, we want to [track](https://docs.bitsrc.io/docs/isolating-and-tracking-components.html) the project's components as Bit components, and let Bit know which files are the test files.
 
@@ -117,4 +117,4 @@ exported 9 components to scope bit.movie-app-example
 ```
 
 That's it, it's now possible to consume the components from any other project as individual components!
-Check out your [scope on bitsrc.io](https://bitsrc.io/bit/movie-app-example).
+Check out your [scope on bitsrc.io](https://bitsrc.io/).
