@@ -94,7 +94,7 @@ the following component environments were installed
 
 $ bit import bit.envs/testers/karma-mocha --tester
 the following component environments were installed
-- bit.envs/testers/testers/karma-mocha@0.0.8
+- bit.envs/testers/testers/karma-mocha@0.0.9
 ```
 
 Now let's test the components!
