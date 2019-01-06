@@ -20,7 +20,7 @@ describe('#UserProfile', () => {
 
   it('Should contain default prop name of Jack Oliver', () => {
     const wrapper = mountComponent();
-    const name  = wrapper.find(`.${style.name}`).text();
+    const name  = wrapper.text();
     expect(name).to.equal("Jack Oliver");
   });
 
