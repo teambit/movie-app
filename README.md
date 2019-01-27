@@ -88,11 +88,11 @@ new components
 Next, we'll import a [build environment](https://docs.bitsrc.io/docs/building-components.html#defining-a-default-compiler-for-your-project) and a [test environment](https://docs.bitsrc.io/docs/testing-components.html#defining-a-tester-for-your-project), so the components will be built and tested properly:
 
 ```bash
-$ bit import bit.envs/bundlers/webpack-css-modules --compiler
+$ bit import bit.envs/compilers/react --compiler
 the following component environments were installed
 - bit.envs/bundlers/webpack-css-modules@0.0.7
 
-$ bit import bit.envs/testers/karma-mocha --tester
+$ bit import bit.envs/testers/mocha --tester
 the following component environments were installed
 - bit.envs/testers/testers/karma-mocha@0.0.9
 ```
