@@ -90,11 +90,11 @@ Next, we'll import a [build environment](https://docs.bitsrc.io/docs/building-co
 ```bash
 $ bit import bit.envs/compilers/react --compiler
 the following component environments were installed
-- bit.envs/bundlers/webpack-css-modules@0.0.7
+- bit.envs/compilers/react@0.0.14
 
 $ bit import bit.envs/testers/mocha --tester
 the following component environments were installed
-- bit.envs/testers/testers/karma-mocha@0.0.9
+- bit.envs/testers/mocha@0.0.14
 ```
 
 Now let's test the components!
