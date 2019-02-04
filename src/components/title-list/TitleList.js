@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 import Item from '../item';
 import PropTypes from 'prop-types';
-import style from './style.scss';
+import style from './TitleList.module.scss';
 import '../../global.css';
 /**
  * @render react

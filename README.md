@@ -26,35 +26,35 @@ $ bit status
 new components
 (use "bit tag --all [version]" to lock a version with all your changes)
 
-     > components/hero ...  missing dependencies
+     > hero ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/hero/Hero.js -> src/global.css
 
-     > components/hero-button ...  missing dependencies
+     > hero-button ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/hero-button/HeroButton.js -> src/global.css
 
-     > components/item ...  missing dependencies
+     > item ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/item/Item.js -> src/global.css
 
-     > components/list-toggle ...  missing dependencies
+     > list-toggle ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/list-toggle/ListToggle.js -> src/global.css
 
-     > components/logo ...  missing dependencies
+     > logo ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/logo/index.js -> src/global.css
 
-     > components/navigation ...  missing dependencies
+     > navigation ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/navigation/Navigation.js -> src/global.css
 
-     > components/title-list ...  missing dependencies
+     > title-list ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/title-list/TitleList.js -> src/global.css
 
-     > components/user-profile ...  missing dependencies
+     > user-profile ...  missing dependencies
        untracked file dependencies (use "bit add <file>" to track untracked files as components):
           src/components/user-profile/UserProfile.js -> src/global.css
 ```
@@ -74,27 +74,27 @@ $ bit status
 new components
 (use "bit tag --all [version]" to lock a version with all your changes)
 
-     > components/hero ... ok
-     > components/hero-button ... ok
-     > components/item ... ok
-     > components/list-toggle ... ok
-     > components/logo ... ok
-     > components/navigation ... ok
-     > components/title-list ... ok
-     > components/user-profile ... ok
+     > hero ... ok
+     > hero-button ... ok
+     > item ... ok
+     > list-toggle ... ok
+     > logo ... ok
+     > navigation ... ok
+     > title-list ... ok
+     > user-profile ... ok
      > style/global ... ok
 ```
 
 Next, we'll import a [build environment](https://docs.bitsrc.io/docs/building-components.html#defining-a-default-compiler-for-your-project) and a [test environment](https://docs.bitsrc.io/docs/testing-components.html#defining-a-tester-for-your-project), so the components will be built and tested properly:
 
 ```bash
-$ bit import bit.envs/bundlers/webpack-css-modules --compiler
+$ bit import bit.envs/compilers/react --compiler
 the following component environments were installed
-- bit.envs/bundlers/webpack-css-modules@0.0.7
+- bit.envs/compilers/react@0.0.14
 
-$ bit import bit.envs/testers/karma-mocha --tester
+$ bit import bit.envs/testers/mocha --tester
 the following component environments were installed
-- bit.envs/testers/testers/karma-mocha@0.0.9
+- bit.envs/testers/mocha@0.0.14
 ```
 
 Now let's test the components!
@@ -108,7 +108,7 @@ We can see all the tests  are ‘passed’. Sounds like a good time to [tag](htt
 ```bash
 $ bit tag --all 1.0.0
 ...9 components tagged | 9 added, 0 changed, 0 auto-tagged
-added components:  style/global@1.0.0, components/hero-button@1.0.0, components/hero@1.0.0, components/list-toggle@1.0.0, components/item@1.0.0, components/logo@1.0.0, components/navigation@1.0.0, components/title-list@1.0.0, components/user-profile@1.0.0
+added components:  style/global@1.0.0, hero-button@1.0.0, hero@1.0.0, list-toggle@1.0.0, item@1.0.0, logo@1.0.0, navigation@1.0.0, title-list@1.0.0, user-profile@1.0.0
 
 $ bit export <UserName>.movie-app-example
 exported 9 components to scope bit.movie-app-example

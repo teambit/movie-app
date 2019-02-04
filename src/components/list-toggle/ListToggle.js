@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import style from './style.scss';
+import style from './ListToggle.module.scss';
 import '../../global.css';
 /**
  * @render react

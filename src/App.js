@@ -6,7 +6,7 @@ import Hero from './components/hero';
 import Logo from './components/logo';
 import UserProfile from './components/user-profile';
 import Navigation from './components/navigation';
-import style from './App.scss';
+import style from './App.module.scss';
 import './global.css';
 
 /**
