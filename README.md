@@ -90,11 +90,11 @@ Next, we'll import a [build environment](https://docs.bit.dev/docs/building-comp
 ```bash
 $ bit import bit.envs/compilers/react --compiler
 the following component environments were installed
-- bit.envs/compilers/react@0.0.14
+- bit.envs/compilers/react@1.0.11
 
 $ bit import bit.envs/testers/mocha --tester
 the following component environments were installed
-- bit.envs/testers/mocha@0.0.14
+- bit.envs/testers/mocha@5.0.2
 ```
 
 Now let's test the components!
@@ -110,8 +110,8 @@ $ bit tag --all 1.0.0
 ...9 components tagged | 9 added, 0 changed, 0 auto-tagged
 added components:  style/global@1.0.0, hero-button@1.0.0, hero@1.0.0, list-toggle@1.0.0, item@1.0.0, logo@1.0.0, navigation@1.0.0, title-list@1.0.0, user-profile@1.0.0
 
-$ bit export <UserName>.movie-app-example
-exported 9 components to scope bit.movie-app-example
+$ bit export <user-name>.movie-app-example
+exported 9 components to scope <user-name>.movie-app-example
 ```
 
 That's it, it's now possible to consume the components from any other project as individual components!
