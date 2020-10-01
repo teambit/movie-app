@@ -1,4 +1,5 @@
-# Tracking Bit Components - Movie App Example
+# An amazing project
+# Tracking Bit Components - Movie App Example 
 
 This repository was exported as [Bit](https://docs.bit.dev/docs/what-is-bit.html) components.
 
